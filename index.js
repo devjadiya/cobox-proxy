@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post("/", async (req, res) => {
+app.post("/ai/instant", async (req, res) => {
   try {
     const response = await fetch("https://ai.cobox.co/ai/instant", {
       method: "POST",
